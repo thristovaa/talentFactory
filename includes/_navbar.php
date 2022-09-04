@@ -14,14 +14,16 @@
 </div>-->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-  	<div class="navbar-header d-flex flex-row">
+  	<div class="navbar-header">
       <a class="navbar-brand p-2" href="#">WebSiteName</a>
-		<ul class="nav navbar-nav d-flex flex-row" style="font-size: 20px;">
-			<li class="p-2"><a href="#" class="text-decoration-none">Home</a></li>
-			<li class="p-2"><a href="#" class="text-decoration-none">Link</a></li>
-			<li class="p-2"><a href="#" class="text-decoration-none">Link</a></li>
-		</ul>
     </div>
-    <button class="btn navbar-btn" style="background-color: #0ad6b4;">Button</button>
+	<div class="nav navbar-nav d-flex flex-row">
+		<ul class="nav navbar-nav d-flex flex-row align-items-center" style="font-size: 20px;">
+			<li class="m-2"><a href="#" class="text-decoration-none">Home</a></li>
+			<li class="m-2"><a href="#" class="text-decoration-none">Link</a></li>
+			<li class="m-2"><a href="#" class="text-decoration-none">Link</a></li>
+		</ul>
+    	<button class="btn navbar-btn m-2" style="background-color: #0ad6b4;">Button</button>
+	</div>
   </div>
 </nav>
