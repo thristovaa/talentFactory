@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #fff;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -159,5 +160,12 @@ input[type="file"] {
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
+}
+/*Input button*/
+[data-tab-content] {
+	display: none;
+}
+.active[data-tab-content] {
+	display: block;
 }
 
