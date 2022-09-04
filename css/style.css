@@ -23,6 +23,7 @@ header .menu li, header .menu li a, header .menu button{
 }
 
 header.menu{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,6 +73,9 @@ button{
 
 button:hover{
     background-color: rgba(0, 136, 169, 1);
+    border: none;
+    transition: width 2s, height 2s, transform 2s;
+    box-shadow: 0rem 0.25rem 0.75rem rgb(30 34 40 / 15%);
 }
 
 img .cards-1{
