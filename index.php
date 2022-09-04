@@ -21,9 +21,17 @@
             <a href="#" class="cta"><button type="button" class="btn">Login</button></a>
         </header>
         <div class="container">
-            <div class="form-row">
-                <input type="text" name="input" id="input">
-            </div>
+            <form action="./includes/login.php" class="text-start mb-3" method="post">
+              <div class="form-floating mb-4">
+                <input type="text" class="form-control" placeholder="Email" name="username" id="loginEmail">
+                <label for="loginUsername">Потребителско име</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input type="password" class="form-control" placeholder="Password" name="password" id="loginPassword">
+                <label for="loginPassword">Парола</label>
+              </div>
+              <button class="btn btn-soft-peach rounded-pill me-1 btn-login w-100 mb-2" name="login" type="submit">Log In</button>
+            </form>
         </div>
         <h1 style="font-family: 'Lobster', cursive;">Заглавие</h1>
         <p style="font-family: 'Raleway', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
