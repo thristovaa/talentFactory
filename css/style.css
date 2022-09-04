@@ -101,14 +101,17 @@ img .cards-1{
 .navbar-light .navbar-nav .nav-link {
 	background-color: #F5F5F5;
 	color: black !important;
-	a:hover {
-		color: #3D3D3D; 
-	}
-	ion-icon {
-		background-color: #F5F5F5;
-		font-size: 1000px;
-	}
 }
+
+.navbar-light .navbar-nav .nav-link a:hover {
+    color: #3D3D3D; 
+}
+
+.navbar-light .navbar-nav .nav-link ion-icon {
+    background-color: #F5F5F5;
+    font-size: 1000px;
+}
+
 .navbar {
 	width: 100%;
 	position: fixed;
