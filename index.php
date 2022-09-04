@@ -13,6 +13,37 @@
     </head>
     <body>
 		<?php include "./includes/_navbar.php";?>
+		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-bs-interval="10000">
+		      <img src="./images/simon-lee-hbFKxsIqclc-unsplash.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item" data-bs-interval="2000">
+			  <img src="./images/joshua-coleman-kFRKvJQtNHg-unsplash.jpg" 
+					class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+			  <img src="./images/simon-lee-zA66MV4EyXc-unsplash.jpg" 
+					class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+			  <img src="./images/liane-tHHoR5oJyY4-unsplash.jpg" 
+					class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+			  <img src="./images/icarius-Lim3NQQ_RZ4-unsplash.jpg" 
+					class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
         <div class="container mt-3">
             <h1 style="font-family: 'Lobster', cursive;">Заглавие</h1>
         </div>
