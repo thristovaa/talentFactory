@@ -14,11 +14,11 @@
                     <div class="user signinBx">
                         <div class="imgBx"> <img src="./images/login/login1.jpg" width="375px"> </div>
                         <div class="formBx">
-                            <form>
+                            <form action="./includes/login.php" method="post">
                                 <h2>Sign in</h2>
-                                <input type="text" name="" placeholder="Username">
-                                <input type="password" name="" placeholder="Password">
-                                <input type="submit" name="" value="Login">
+                                <input type="text" name="username" placeholder="Username">
+                                <input type="password" name="password" placeholder="Password">
+                                <input type="submit" name="login" value="Login">
                                 <p class="signup">Don't have an account? <a href = "#" onclick="toggleForm();">Sign up.</a> </p>
                             </form>
                         </div>
