@@ -11,7 +11,9 @@
 			<?php if(isset($_SESSION['username'])) { ?>
 				<li class="m-2"><i class="fa-sharp fa-solid fa-circle-user fa-lg"></i></a></li>
 			<?php } else { ?>
-			<button type="button" id="myModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+			<form action="./login_form.php">
+				<button type="submit" id="myModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+			</form>
 			<?php } ?>
 		</ul>
 	</div>
