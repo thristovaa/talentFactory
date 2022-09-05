@@ -12,36 +12,43 @@
     </head>
 	<body>
 		<?php include "./includes/_navbar.php";?>
-		<!-- Nav tabs -->
-		<ul>
-			<li data-tab-target="#trending">Trending</li>
-			<li data-tab-target="#digital_art">Digital Art</li>
-			<li data-tab-target="#art">Art</li>
-			<li data-tab-target="#photography">Photography</li>
-			<li data-tab-target="#videos">Videos</li>
-		</ul>	
-		<div class="tab-content" data-tab-content>
-			<div id="trending">
-				<h3>Trending</h3>
-				<p>Photos</p>
-			</div>
-			<div id="digital_art" data-tab-content>
-				<h3>Digital Art</h3>
-				<p>Digital</p>
-			</div>
-			<div id="art" data-tab-content>
-				<h3>Art</h3>
-				<p>Art</p>
-			</div>
-			<div id="photography" data-tab-content>
-				<h3>Photography</h3>
-				<p>Photography</p>
-			</div>
-			<div id="videos" data-tab-content>
-				<h3>Videos</h3>
-				<p>Videos</p>
+		<div class="container mt-5">
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button type="button" id="tabList-1" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabList-pane-1" role="tab" aria-controls="tabList-pane-1" aria-selected="true">Panel 1</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button type="button" id="tabList-2" class="nav-link" data-bs-toggle="tab" data-bs-target="#tabList-pane-2" role="tab" aria-controls="tabList-pane-2" aria-selected="false">Panel 2</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button type="button" id="tabList-3" class="nav-link" data-bs-toggle="tab" data-bs-target="#tabList-pane-3" role="tab" aria-controls="tabList-pane-3" aria-selected="false">Panel 3</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button type="button" id="tabList-3" class="nav-link" data-bs-toggle="tab" data-bs-target="#tabList-pane-3" role="tab" aria-controls="tabList-pane-3" aria-selected="false">Panel 3</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button type="button" id="tabList-3" class="nav-link" data-bs-toggle="tab" data-bs-target="#tabList-pane-3" role="tab" aria-controls="tabList-pane-3" aria-selected="false">Panel 3</button>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="tabList-pane-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabList-1">
+					<p class="text-left mt-3">Panel 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.</p>
+				</div>
+				<div id="tabList-pane-2" class="tab-pane" role="tabpanel" aria-labelledby="tabList-2">
+					<p class="text-left mt-3">Panel 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.</p>
+				</div>
+				<div id="tabList-pane-3" class="tab-pane" role="tabpanel" aria-labelledby="tabList-3">
+					<p class="text-left mt-3">Panel 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.</p>
+				</div>
+				<div id="tabList-pane-3" class="tab-pane" role="tabpanel" aria-labelledby="tabList-3">
+					<p class="text-left mt-3">Panel 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.</p>
+				</div>
+				<div id="tabList-pane-3" class="tab-pane" role="tabpanel" aria-labelledby="tabList-3">
+					<p class="text-left mt-3">Panel 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.</p>
+				</div>
 			</div>
 		</div>
+		<script src="./js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
 
