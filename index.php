@@ -62,11 +62,31 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="container mt-3">
-        	    <h1>Top 3 artists for the last <span>week</span></h1>
+		<div class="segment2 p-3">
+			<div class="container my-3">
+				<h1>Top 3 artists of the 
+					<span style="text-decoration: underline; 
+						text-decoration-color: #0AD6B4">week</span></h1>
         	</div>
-        	<div class="container">
+        	<div class="cards row m-auto px-0 py-2">
+				<div class="col-lg-4 col-md-4 col-sm-2">
+					<div class="card m-auto" style="width: 20rem;">
+						<img src="./images/simon-lee-J10iZHcZRbg-unsplash.jpg" 
+							class="card-img">
+					</div>
+				</div>	
+				<div class="col-lg-4 col-md-4 col-sm-2">
+					<div class="card m-auto" style="width: 20rem;">
+						<img src="./images/simon-lee-V8_xGwr3isA-unsplash.jpg" 
+							class="card-img">
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-2">
+					<div class="card m-auto" style="width: 20rem;">
+						<img src="./images/simon-lee-jbjGYIEBI20-unsplash.jpg" 
+							class="card-img">
+					</div>
+				</div>
         	</div>
 		</div>
 		<?php include "./includes/_footer.php";?>
