@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse" style="background-color: #010028">
   <div class="container-fluid">
 	<div class="navbar-header">
-      <a class="navbar-brand p-2" href="#">Talent Factory</a>
+      <a class="navbar-brand p-2" href="#"><img src="./images/logo/logo.png" width="100px" alt=""></a>
     </div>
 	<div class="nav navbar-nav d-flex flex-row">
 		<ul class="nav navbar-nav d-flex flex-row align-items-center" style="font-size: 20px;">
