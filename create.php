@@ -1,6 +1,6 @@
 	<?php include "./includes/_navbar.php"; ?>
-	<div class="create-bg w-100 h-100" style="background-image: url('./images/steve-johnson-JNgehrAsQ-o-unsplash.jpg'); background-size: cover">
-		<div class="upload-container w-50 m-auto">
+	<div class="row create-bg w-100 h-100" style="background-image: url('./images/steve-johnson-JNgehrAsQ-o-unsplash.jpg'); background-size: cover">
+		<div class="upload-container w-50 m-auto rounded">
 			<div class="content m-auto pt-4">
 	    	    <h1>Upload</h1>
 	    	</div>
