@@ -23,7 +23,7 @@
 		<div class="tab-content">
 			<div id="tabList-pane-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabList-1">
 				<!--ottuk-->	
-				<div class="row row-cols-1 row-cols-md-3 m-auto">
+				<div class="row row-cols-1 row-cols-md-3 m-auto g-3">
 					<?php 
 	      
 					$query = "SELECT * FROM posts ";
@@ -38,11 +38,14 @@
 						$create_author = $row['create_author'];
 	
 					?>
-					<div class="col-lg-4 col-md-4 col-sm-4 my-3">
-						<div class="card h-100 m-auto">
-							<img src="./images/create/<?php echo $create_image; ?>" class="card-img-top">
-							<div class="card-body rounded">
-							<h5 class="card-title"><a href="./post.php?p_id=<?php echo $create_id; ?>"><?php echo $create_title; ?></a></h5>
+					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
+						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+						background-position: center center;">
+							<div class="exp-info w-50 h-20">
+							<a href="./post.php?p_id=<?php 
+								echo $create_id; ?>"><?php echo $create_user_image; ?>
+							<img class="card-title" 
+								src="./images/pfp/<?php echo $create_author_image?>"></a>
 								<h5 class="card-title">By <?php echo $create_author; ?></h5>
 								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
 							</div>
@@ -72,11 +75,14 @@
 						
 						if($create_category == 'Art'){
 					?>
-					<div class="col-lg-4 col-md-4 col-sm-4 my-3">
-						<div class="card h-100 m-auto">
-							<img src="./images/create/<?php echo $create_image; ?>" class="card-img-top">
-							<div class="card-body rounded">
-							<h5 class="card-title"><a href="./post.php?p_id=<?php echo $create_id; ?>"><?php echo $create_title; ?></a></h5>
+					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
+						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+						background-position: center center;">
+							<div class="exp-info w-50 h-20">
+							<a href="./post.php?p_id=<?php 
+								echo $create_id; ?>"><?php echo $create_user_image; ?>
+							<img class="card-title" 
+								src="./images/pfp/<?php echo $create_author_image?>"></a>
 								<h5 class="card-title">By <?php echo $create_author; ?></h5>
 								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
 							</div>
@@ -109,11 +115,14 @@
 						
 						if($create_category == 'Digital art'){
 					?>
-					<div class="col-lg-4 col-md-4 col-sm-4 my-3">
-						<div class="card h-100 m-auto">
-							<img src="./images/create/<?php echo $create_image; ?>" class="card-img-top">
-							<div class="card-body rounded">
-							<h5 class="card-title"><a href="./post.php?p_id=<?php echo $create_id; ?>"><?php echo $create_title; ?></a></h5>
+					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
+						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+						background-position: center center;">
+							<div class="exp-info w-50 h-20">
+							<a href="./post.php?p_id=<?php 
+								echo $create_id; ?>"><?php echo $create_user_image; ?>
+							<img class="card-title" 
+								src="./images/pfp/<?php echo $create_author_image?>"></a>
 								<h5 class="card-title">By <?php echo $create_author; ?></h5>
 								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
 							</div>
@@ -146,11 +155,14 @@
 						
 						if($create_category == 'Photography'){
 					?>
-					<div class="col-lg-4 col-md-4 col-sm-4 my-3">
-						<div class="card h-100 m-auto">
-							<img src="./images/create/<?php echo $create_image; ?>" class="card-img-top">
-							<div class="card-body rounded">
-								<h5 class="card-title"><a href="./post.php?p_id=<?php echo $create_id; ?>"><?php echo $create_title; ?></a></h5>
+					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
+						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+						background-position: center center;">
+							<div class="exp-info w-50 h-20">
+							<a href="./post.php?p_id=<?php 
+								echo $create_id; ?>"><?php echo $create_user_image; ?>
+							<img class="card-title" 
+								src="./images/pfp/<?php echo $create_author_image?>"></a>
 								<h5 class="card-title">By <?php echo $create_author; ?></h5>
 								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
 							</div>
@@ -183,11 +195,14 @@
 						
 						if($create_category == 'Videos'){
 					?>
-					<div class="col-lg-4 col-md-4 col-sm-4 my-3">
-						<div class="card h-100 m-auto">
-							<img src="./images/create/<?php echo $create_image; ?>" class="card-img-top">
-							<div class="card-body rounded">
-							<h5 class="card-title"><a href="./post.php?p_id=<?php echo $create_id; ?>"><?php echo $create_title; ?></a></h5>
+					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
+						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+						background-position: center center;">
+							<div class="exp-info w-50 h-20">
+							<a href="./post.php?p_id=<?php 
+								echo $create_id; ?>"><?php echo $create_user_image; ?>
+							<img class="card-title" 
+								src="./images/pfp/<?php echo $create_author_image?>"></a>
 								<h5 class="card-title">By <?php echo $create_author; ?></h5>
 								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
 							</div>
