@@ -34,9 +34,9 @@
         
         ?>
             <div class="row">
-                <div class="col-5">
-                    <div class="rounded" style="border: 2px #d1d1d1 solid;" >
-                        <img src="./images/create/<?php echo $post_image; ?>" class="rounded p-3" width="350px" alt="">
+                <div class="col-6">
+                    <div class="rounded" style="border: 0px" >
+                        <img src="./images/create/<?php echo $post_image; ?>" class="rounded w-100" alt="">
                     </div>
                     <div class="accordion mt-3" id="accordionExample">
                         <div class="accordion-item">
@@ -59,29 +59,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7 p-4">
+                <div class="col-6 p-4">
                     <div class="row d-flex align-items-end">
-                        <div class="col-6">
+                        <div class="col-12">
                             <h1 class="text-align-left"><?php echo $post_title; ?></h1>
                         </div>
-                        <div class="col-6">
-                            <p class="text-align-left">Category: <?php echo $post_category; ?></p>
+                        <div class="col-12">
+                            <p class="text-align-left">Category: <mark style="background-color: #d586e9;"><?php echo $post_category; ?></mark></p>
                         </div>
                     </div>
-                    <div class="row d-flex align-items-center rounded my-2" style="border: 2px #d1d1d1 solid;">
+                    <div class="row d-flex align-items-center rounded my-2" style="border: 2px #0ad6b4 solid;">
                         <div class="col-3 p-2">
                             <img src="./images/pfp/<?php echo $post_author_image; ?>"  width="60px" style="border-radius: 50%;" alt="">
                         </div>
                         <div class="col-9 p-2 text-align-left">
                             by<h4 style="margin: 0;"><?php echo $post_author; ?></h4>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-end">
-                        <div class="col-6 text-align-left ml-2">
-                            <h3>Price</h3>
-                        </div>
-                        <div class="col-6 text-align-left">
-                            <p><?php echo $post_price; ?> lv</p>
                         </div>
                     </div>
                     <div class="accordion mt-3" id="accordionExample">
@@ -92,7 +84,17 @@
                             </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-align-left">
+                                <div class="row">
+                                    <div class="row d-flex align-items-end">
+                                        <div class="col-6 text-align-left ml-2">
+                                            <h3>Price</h3>
+                                        </div>
+                                        <div class="col-6 text-align-left">
+                                            <p><?php echo $post_price; ?> lv</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <?php echo $post_content; ?>
                             </div>
                             </div>
