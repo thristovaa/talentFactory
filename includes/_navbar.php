@@ -24,7 +24,7 @@
   		  		<li class="m-2"><a href="./explore.php" 
   		  			class="text-decoration-none nav-btn fs-6">Explore</a></li>
   		  		<li class="m-2"><a href="./create.php" 
-  		  			class="text-decoration-none nav-btn fs-6">Create</a></li>
+  		  			class="text-decoration-none nav-btn fs-6">Upload</a></li>
   		  		<li class="m-2"><a href="./spinnigWheel.php" 
   		  			class="text-decoration-none nav-btn fs-6">Win</a></li>
   		  		<?php if(isset($_SESSION['username'])) { ?>
