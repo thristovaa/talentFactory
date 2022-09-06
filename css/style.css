@@ -107,6 +107,13 @@ button {
 	transition: .5s;
 }
 
+.btn-link {
+	transition: none !important;
+	background-color: transparent !important;
+	border-color: none !important;
+	border: none !important;
+}
+
  .carousel-button {
 	background-color: transparent !important;
  }
