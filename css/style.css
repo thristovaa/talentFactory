@@ -358,6 +358,16 @@ input[type="file"] {
     background-image: url("../images/icon/paperclip-solid.svg") !important;
 }
 
+/* text-align */
+
+.text-align-left{
+    text-align: left;
+}
+
+p {
+    margin: 0;
+}
+
 @media screen and (min-width: 800px) {
 	.card {
 		width: 10rem;
