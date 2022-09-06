@@ -48,7 +48,7 @@
 					</div>
 					<?php } ?>
 				</div>
-				<!--dotuk-->
+				<!--dotuka-->
 			</div>
 			<div id="tabList-pane-2" class="tab-pane" role="tabpanel" aria-labelledby="tabList-2">
 				<!--ottuk-->
