@@ -220,6 +220,9 @@ input[type="file"] {
 }
 
 /*Segment1*/
+.segment1 {
+	height: 90vh;
+}
 .title {
 	justify-content: center;
 	margin: auto;
@@ -425,7 +428,10 @@ p {
     margin: 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 720px) {
+	.glava {
+		display: none;
+	}
 	.card {
 		width: 10rem;
 	}
@@ -436,5 +442,16 @@ p {
 	.glava {
 		display: none;
 	}
+	.segment1 {
+		height: 80vh;
+	}
+	.title {
+		padding: 0 2rem;
+	}
+	.card-img {
+		padding: 1rem 0;	
+	}
 }
+
+
 

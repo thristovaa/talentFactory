@@ -1,8 +1,8 @@
 	<?php include "./includes/_navbar.php";?>
 	<div style="background-image: url('./images/background-blured (4).jpg');
 			background-size:cover;">
-		<div class="d-flex flex-row align-items-center" style="height: 90vh;">
-			<div class="title col-lg-5 col-md-6 col-sm-6">
+		<div class="segment1 d-flex flex-row align-items-center">
+			<div class="title col-lg-5 col-md-12 col-sm-12">
 				<div>
 					<h1 id="title" class="text-left">Connecting 
 						<span id="keyword1">artists</span>
@@ -27,21 +27,21 @@
 					text-decoration-color: #0AD6B4">week</span></h1>
     	</div>
     	<div class="cards row m-auto px-0 py-2">
-			<div class="col-lg-4 col-md-4 col-sm-4">
+			<div class="col-lg-4 col-md-12 col-sm-12">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info w-50 h-30"></div>
 					<img src="./images/simon-lee-J10iZHcZRbg-unsplash.jpg" 
 						class="card-img">
 				</div>
 			</div>	
-			<div class="col-lg-4 col-md-4 col-sm-4">
+			<div class="col-lg-4 col-md-12 col-sm-12">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info middle w-50 h-30"></div>
 					<img src="./images/simon-lee-V8_xGwr3isA-unsplash.jpg" 
 						class="card-img">
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4">
+			<div class="col-lg-4 col-md-12 col-sm-12">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info w-50 h-30"></div>
 					<img src="./images/simon-lee-jbjGYIEBI20-unsplash.jpg" 
