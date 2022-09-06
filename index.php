@@ -30,21 +30,21 @@
 			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info w-50 h-30"></div>
-					<img src="./images/simon-lee-J10iZHcZRbg-unsplash.jpg" 
+					<img src="./images/geri1.jpg" 
 						class="card-img">
 				</div>
 			</div>	
 			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info middle w-50 h-30"></div>
-					<img src="./images/simon-lee-V8_xGwr3isA-unsplash.jpg" 
+					<img src="./images/geri2.jpg" 
 						class="card-img">
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info w-50 h-30"></div>
-					<img src="./images/simon-lee-jbjGYIEBI20-unsplash.jpg" 
+					<img src="./images/geri3.jpg" 
 						class="card-img">
 				</div>
 			</div>
