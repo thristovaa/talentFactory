@@ -358,6 +358,36 @@ option {
 .nav-link {
 	color: black !important;
 }
+.nav-link.active {
+	border 2px solid !important;
+	border-color: #0AD6B4 !important;
+	background-color: #0AD6B4 !important;
+}
+.exp-card {
+	overflow: hidden;
+	transition: transform .6s ease;
+}
+.exp-img {
+	height: 400px;
+	position: relative;
+	transition: transform .6s ease;
+}
+.exp-card:hover .exp-img {
+	cursor: pointer;
+	transform: scale(1.1);
+	opacity: 85%;
+}
+.exp-info {
+	background: #02012b; 
+	float: left;
+    position: absolute;
+    bottom: 0;
+	opacity: 70%;
+	right: 100px;
+    z-index: 1000;
+    padding: 1.3rem;
+    color: #FFFFFF;
+}
 
 @media screen and (min-width: 1100px) {
 	.carousel {
