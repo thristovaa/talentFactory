@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style_game.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap%27" rel="stylesheet">
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="./images/logo/star_pink.png">
@@ -33,10 +34,10 @@
   		  		<?php if(isset($_SESSION['username'])){ ?>
 				<li class="m-2"><a href="./create.php" 
   		  			class="text-decoration-none nav-btn fs-6">Upload</a></li>
-				<li class="m-2"><a href="./create.php" 
+				<li class="m-2"><a href="./myuploads.php" 
   		  			class="text-decoration-none nav-btn fs-6">My Uploads</a></li>
 				<?php } ?>
-  		  		<li class="m-2"><a href="./spinnigWheel.php" 
+  		  		<li class="m-2"><a href="./win.php" 
   		  			class="text-decoration-none nav-btn fs-6">Win</a></li>
   		  		<?php if(isset($_SESSION['username'])) { ?>
 				<form action="./includes/logout.php">
