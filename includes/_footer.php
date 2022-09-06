@@ -29,9 +29,9 @@
         class="btn btn-link btn-floating btn-lg text-dark m-1"
         href="#!"
         role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
+        data-mdb-ripple-color="dark">
+        <i class="fab fa-facebook-f"></i>
+      </a>
 
       <!-- Twitter -->
       <a
@@ -42,14 +42,14 @@
         ><i class="fab fa-twitter"></i
       ></a>
 
-      <!-- Google -->
+      <!-- Email -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
+        href="mailto:v.stanoyska@gmail.com"
         role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-google"></i
-      ></a>
+        data-mdb-ripple-color="dark">
+		<i class="fa-sharp fa-solid fa-envelope"></i>
+      </a>
 
       <!-- Instagram -->
       <a
@@ -58,23 +58,6 @@
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-instagram"></i
-      ></a>
-
-      <!-- Linkedin -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <!-- Github -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-github"></i
       ></a>
     </section>
     <!-- Section: Social media -->
