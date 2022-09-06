@@ -314,6 +314,21 @@ input[type="file"] {
 	}
 }
 
+/*accordeon*/
+
+.accordion-button{
+    background-color: #d586d5 !important;
+}
+
+.accordion-button:not(.collapsed){
+    color: #010028 !important;
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../images/icon/paperclip-solid.svg") !important;
+}
+
 @media screen and (min-width: 800px) {
 	.card {
 		width: 10rem;
