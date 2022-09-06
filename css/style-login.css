@@ -23,7 +23,7 @@ section .container
 {
     position: relative;
     width: 800px;
-    height: 500px;
+    height: 570px;
     background: #f0d3f7;
     box-shadow: 0 15px 50px rgba(34, 24, 24, 0.2);
     overflow: hidden;
@@ -180,3 +180,32 @@ section .container.active .signinBx .imgBx
 {
     left: -100%;
 }
+
+/*Input button*/
+
+section .container .user .formBx form input[type="file"] {
+    display: none;
+  }
+  
+  .custom-file-upload {
+    transition: 0.5s;
+    border: 1px solid #0ad6b4;
+    color: #0ad6b4;
+    border-radius: 6px;
+    display: inline-block;
+    box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .custom-file-upload:hover {
+    transition: 0.5s;
+    border: 1px solid #d586d5;
+    background-color: #d586d5;
+    color: #fff;
+    box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
+    border-radius: 6px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }

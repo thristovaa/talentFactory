@@ -1,4 +1,5 @@
 <?php include "./includes/_navbar.php";?>
+
 	<div class="container mt-5">
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="nav-item" role="presentation">
@@ -47,7 +48,7 @@
 					</div>
 					<?php } ?>
 				</div>
-				<!--dotuk-->
+				<!--dotuka-->
 			</div>
 			<div id="tabList-pane-2" class="tab-pane" role="tabpanel" aria-labelledby="tabList-2">
 				<!--ottuk-->
