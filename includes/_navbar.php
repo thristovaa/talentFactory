@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap%27" rel="stylesheet">
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="./images/logo/star_pink.png">
         <title>Talent Factory</title>
     </head>
 	<body>
@@ -23,13 +24,19 @@
   		  			class="text-decoration-none nav-btn fs-6">Home</a></li>
   		  		<li class="m-2"><a href="./explore.php" 
   		  			class="text-decoration-none nav-btn fs-6">Explore</a></li>
-  		  		<li class="m-2"><a href="./create.php" 
+  		  		<?php if(isset($_SESSION['username'])){ ?>
+				<li class="m-2"><a href="./create.php" 
   		  			class="text-decoration-none nav-btn fs-6">Upload</a></li>
+				<li class="m-2"><a href="./create.php" 
+  		  			class="text-decoration-none nav-btn fs-6">My Uploads</a></li>
+				<?php } ?>
   		  		<li class="m-2"><a href="./spinnigWheel.php" 
   		  			class="text-decoration-none nav-btn fs-6">Win</a></li>
   		  		<?php if(isset($_SESSION['username'])) { ?>
-  		  			<li class="m-2"><i class="fa-sharp fa-solid fa-circle-user fa-lg"></i></a></li>
-  		  		<?php } else { ?>
+				<form action="./includes/logout.php">
+  		  			<button type="submit" id="myModal" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Log out</button>
+  		  		</form>
+				<?php } else { ?>
   		  		<form action="./login_form.php">
   		  			<button type="submit" id="myModal" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
   		  		</form>
