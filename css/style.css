@@ -326,6 +326,9 @@ input[type="file"] {
 	margin: auto;
 	color: #E0E0E0;
 }
+option {
+	background-color: #0AD6B4 !important;
+}
 .form-control, .form-select, option {
 	background-color: transparent !important;
 	border: 2px solid !important;
@@ -349,6 +352,11 @@ input[type="file"] {
 }
 .upload-btns {
 	display: block;
+}
+
+/*Explore*/
+.nav-link {
+	color: black !important;
 }
 
 @media screen and (min-width: 1100px) {
