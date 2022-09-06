@@ -1,6 +1,5 @@
 	<?php include "./includes/_navbar.php";?>
-	<div  
-		style="background-image: url('./images/background-blured (4).jpg');
+	<div style="background-image: url('./images/background-blured (4).jpg');
 			background-size:cover;">
 		<div class="d-flex flex-row">
 			<div class="title col-lg-6 col-md-6 col-sm-6">

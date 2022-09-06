@@ -36,14 +36,16 @@
 
 ?>
 
-<div class="container my-4">
+<div class="container py-3">
     <form class="container-form row d-flex align-items-end" action="" method="post" enctype="multipart/form-data">
         <div class="mb-3 col-4">
             <label for="exampleFormControlInput1" class="form-label w-100 m-2" style="text-align: left;">Title</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" name="title">
+			<input type="text" class="form-control transparent-input" 
+				id="exampleFormControlInput1" name="title">
         </div>
         <div class="mb-3 col-4">
-            <select class="form-select" aria-label="Default select example" name="category"> 
+			<select class="form-select transparent-input" 
+				aria-label="Default select example" name="category" style="color: #E0E0E0"> 
                 <option selected>Choose category</option>
                 <?php 
                 
@@ -62,23 +64,22 @@
                 <?php } ?>
             </select>
         </div>
-        <div class="mb-3 col-4">
+        <div class="mb-3 col-4 w-80 m-auto">
             <label for="exampleFormControlInput1" class="form-label w-100 m-2" style="text-align: left;">Price</label>
-            <input type="number" class="form-control" id="exampleFormControlInput1" name="price">
+            <input type="number" class="form-control transparent-input" id="exampleFormControlInput1" name="price">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label w-100 m-2" style="text-align: left;">Description</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
         </div>
         <div class="col-12 d-flex flex-row w-100 justify-content-center mb-3">
-            <p class="mx-2"><label for="post_category">Image</label></p>
-            <label for="file-upload" class="custom-file-upload mx-2">
-                <ion-icon name="cloud-upload-outline"></ion-icon> Upload image
-            </label>
+			<label for="file-upload" class="custom-file-upload mx-2" 
+				style="color: #E0E0E0">Upload image</label>
             <input id="file-upload" type="file" name="image"/>
         </div>
         <div class="col-12">
-            <input type="submit" class="btn" name="create_post" style="background-color: #0ad6b4;" value="Create">
+			<input type="submit" class="btn" name="create_post"
+				 style="background-color: #0ad6b4; color: #E0E0E0" value="Upload">
         </div>
     </form>
 </div>
