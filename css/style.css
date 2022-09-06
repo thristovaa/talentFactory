@@ -359,7 +359,7 @@ option {
 	color: black !important;
 }
 .nav-link.active {
-	border 2px solid !important;
+	border: 2px solid !important;
 	border-color: #0AD6B4 !important;
 	background-color: #0AD6B4 !important;
 }
@@ -432,7 +432,9 @@ p {
 
 }
 
-@media screen and (min-width: 450px) {
-
+@media screen and (max-width: 450px) {
+	.glava {
+		display: none;
+	}
 }
 

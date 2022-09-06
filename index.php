@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			  <div class="col-lg-5 col-md-6 col-sm-6">
-            <img src="./images/glava.png" style="max-width: 500px;" alt="">
+            <img class="glava" src="./images/glava.png" style="max-width: 500px;" alt="">
 			  </div>
 		</div>
 	</div>
