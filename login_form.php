@@ -26,13 +26,18 @@
                 </div>
                 <div class="user signupBx">
                     <div class="formBx">
-                        <form>
+                        <form action="./includes/registration.php" method="post" enctype="multipart/form-data">
                             <h2>Create an Account</h2>
-                            <input type="text" name="" placeholder="Username">
-                            <input type="email" name="" placeholder="Email Adress">
-                            <input type="password" name="" placeholder="Create Password">
-                            <input type="password" name="" placeholder="Confirm Password">
-                            <input type="submit" name="" value="Sign Up">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="text" name="first_name" placeholder="First Name">
+                            <input type="text" name="last_name" placeholder="Last Name">
+                            <input type="email" name="email" placeholder="Email Adress">
+                            <input type="password" name="password" placeholder="Password">
+                            <label for="file-upload" class="custom-file-upload mx-2">
+                                <ion-icon name="cloud-upload-outline"></ion-icon> Upload profile picture
+                            </label>
+                            <input type="file" id="file-upload" name="image" placeholder="Upload Profile Picture">
+                            <input type="submit" name="register" value="Sign Up">
                             <p class="signup">Already have an account? <a href = "#" onclick="toggleForm();">Sign in.</a> </p>
                         </form>
                     </div>

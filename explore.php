@@ -1,4 +1,5 @@
 <?php include "./includes/_navbar.php";?>
+
 	<div class="container mt-5">
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="nav-item" role="presentation">
