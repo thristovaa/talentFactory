@@ -1,8 +1,9 @@
 	<?php include "./includes/_navbar.php"; ?>
-	<div class="row create-bg w-100 h-100" style="background-image: url('./images/steve-johnson-JNgehrAsQ-o-unsplash.jpg'); background-size: cover">
+	<div class="row create-bg m-0"
+		style="background-image: url('./images/create-blur (1).jpg'); background-size: cover">
 		<div class="upload-container w-50 m-auto rounded">
-			<div class="content m-auto pt-4">
-	    	    <h1>Upload</h1>
+			<div class="content m-auto pt-3">
+	    	    <h1><span id="upload-title">Upload</span></h1>
 	    	</div>
 			<?php
 			    if(isset($_GET['source'])){
@@ -22,7 +23,7 @@
 			?>
 		</div>
 	</div>
-	<?php include "./includes/_footer.php"; ?>
+	<?php include "./includes/_footer.php";?>
 	<script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

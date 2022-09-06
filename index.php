@@ -54,21 +54,21 @@
 					text-decoration-color: #0AD6B4">week</span></h1>
     	</div>
     	<div class="cards row m-auto px-0 py-2">
-			<div class="col-lg-4 col-md-3 col-sm-2">
+			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info w-50 h-30"></div>
 					<img src="./images/simon-lee-J10iZHcZRbg-unsplash.jpg" 
 						class="card-img">
 				</div>
 			</div>	
-			<div class="col-lg-4 col-md-3 col-sm-2">
+			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info middle w-50 h-30"></div>
 					<img src="./images/simon-lee-V8_xGwr3isA-unsplash.jpg" 
 						class="card-img">
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-3 col-sm-2">
+			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="card m-auto" style="width: 18rem;">
 					<div class="card-info w-50 h-30"></div>
 					<img src="./images/simon-lee-jbjGYIEBI20-unsplash.jpg" 
@@ -85,11 +85,5 @@
 		</div>
 	</div>
 	<?php include "./includes/_footer.php";?>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">		</script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/3077a13519.js" crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-</body>
+	</body>
 </html>

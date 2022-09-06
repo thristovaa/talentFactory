@@ -38,14 +38,13 @@
 
 <div class="container py-3">
     <form class="container-form row d-flex align-items-end" action="" method="post" enctype="multipart/form-data">
-        <div class="mb-3 col-4">
-            <label for="exampleFormControlInput1" class="form-label w-100 m-2" style="text-align: left;">Title</label>
-			<input type="text" class="form-control transparent-input" 
-				id="exampleFormControlInput1" name="title">
+        <div class="mb-3 col-lg-4 col-md-4 col-sm-4">
+			<input type="text" class="form-control transparent-input m-2" 
+				id="exampleFormControlInput1" name="title" placeholder="Title">
         </div>
-        <div class="mb-3 col-4">
-			<select class="form-select transparent-input" 
-				aria-label="Default select example" name="category" style="color: #E0E0E0"> 
+        <div class="mb-3 col-lg-4 col-md-4 col-sm-4">
+			<select class="form-select transparent-input m-2" 
+				aria-label="Default select example" name="category"> 
                 <option selected>Choose category</option>
                 <?php 
                 
@@ -64,22 +63,24 @@
                 <?php } ?>
             </select>
         </div>
-        <div class="mb-3 col-4 w-80 m-auto">
-            <label for="exampleFormControlInput1" class="form-label w-100 m-2" style="text-align: left;">Price</label>
-            <input type="number" class="form-control transparent-input" id="exampleFormControlInput1" name="price">
+        <div class="mb-3 col-lg-4 col-md-4 col-sm-4 w-80 m-auto">
+			<input type="number" class="form-control transparent-input m-2" 
+				id="exampleFormControlInput1" name="price" placeholder="Price">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label w-100 m-2" style="text-align: left;">Description</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+			<textarea class="form-control m-2" id="exampleFormControlTextarea1" 
+				placeholder="Description" rows="3" name="description"></textarea>
         </div>
-        <div class="col-12 d-flex flex-row w-100 justify-content-center mb-3">
-			<label for="file-upload" class="custom-file-upload mx-2" 
-				style="color: #E0E0E0">Upload image</label>
-            <input id="file-upload" type="file" name="image"/>
-        </div>
-        <div class="col-12">
-			<input type="submit" class="btn" name="create_post"
-				 style="background-color: #0ad6b4; color: #E0E0E0" value="Upload">
-        </div>
+		<div class="row d-flex m-auto">
+			<div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+				<label for="file-upload" class="custom-file-upload mx-2" 
+					style="color: #E0E0E0">Upload image</label>
+        	    <input id="file-upload" type="file" name="image"/>
+        	</div>
+        	<div class="col-lg-6 col-md-6 col-sm-6">
+				<input type="submit" class="btn" name="create_post"
+					 style="background-color: #0ad6b4; color: #E0E0E0" value="Upload">
+        	</div>
+		</div>
     </form>
 </div>
