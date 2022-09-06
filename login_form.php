@@ -87,6 +87,8 @@
                 if(!$register_user_query){
                     die("QUERY FAILED " . mysqli_error($connect) . ' ' . mysqli_errno($connect));
                 }
+
+                header('Location: ./index.php');
             }else{
                 echo '<div class="alert alert-dismissible fade show m-0" style="background-color: #d586e9;" role="alert">
                 Please fill every field.

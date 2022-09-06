@@ -109,6 +109,44 @@
                 <h2 class="p-4">More from this creator:</h2>
             </div>
         </div>
+        <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 m-auto">
+					<?php 
+	      
+					$query = "SELECT * FROM posts ";
+					$query .= "ORDER BY create_id DESC";
+	
+					$select_video_posts_query = mysqli_query($connect, $query);
+					while($row = mysqli_fetch_assoc($select_video_posts_query)){
+						$create_id = $row['create_id'];
+						$create_title = $row['create_title'];
+						$create_rating = $row['create_rating'];
+						$create_image = $row['create_image'];
+						$create_author = $row['create_author'];
+						$create_category = $row['create_category'];
+						$create_user_image = $row['create_author_image'];
+
+                        if($create_author == $post_author){
+                            if($create_id != $the_post_id){                           
+
+					?>
+                        <div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
+                            
+                            <a href="./post.php?p_id=<?php echo $create_id; ?>">
+                                <div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+                                background-position: center center;">
+                                    <div class="exp-info w-50 h-20">
+                                        <img class="card-title pb-2" width="50px" style="border-radius:50%;" src="./images/pfp/<?php echo $create_user_image?>">
+                                        <h5 class="card-title">By <?php echo $create_author; ?></h5>
+                                        <p class="card-text">★ <?php echo $create_rating ?>/5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+					<?php 
+				} } } ?>
+				</div>
+        </div>
         <?php include "./includes/_footer.php"; ?>
     </body>
 </html>

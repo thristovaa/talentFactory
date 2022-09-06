@@ -36,20 +36,21 @@
 						$create_rating = $row['create_rating'];
 						$create_image = $row['create_image'];
 						$create_author = $row['create_author'];
+						$create_user_image = $row['create_author_image'];
 	
 					?>
 					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
-						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
-						background-position: center center;">
-							<div class="exp-info w-50 h-20">
-							<a href="./post.php?p_id=<?php 
-								echo $create_id; ?>"><?php echo $create_user_image; ?>
-							<img class="card-title" 
-								src="./images/pfp/<?php echo $create_author_image?>"></a>
-								<h5 class="card-title">By <?php echo $create_author; ?></h5>
-								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+						
+						<a href="./post.php?p_id=<?php echo $create_id; ?>">
+							<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+							background-position: center center;">
+								<div class="exp-info w-50 h-20">
+									<img class="card-title pb-2" width="50px" style="border-radius:50%;" src="./images/pfp/<?php echo $create_user_image?>">
+									<h5 class="card-title">By <?php echo $create_author; ?></h5>
+									<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<?php } ?>
 				</div>
@@ -72,21 +73,22 @@
 						$create_image = $row['create_image'];
 						$create_author = $row['create_author'];
 						$create_category = $row['create_category'];
+						$create_user_image = $row['create_author_image'];
 						
 						if($create_category == 'Art'){
 					?>
 					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
-						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
-						background-position: center center;">
-							<div class="exp-info w-50 h-20">
-							<a href="./post.php?p_id=<?php 
-								echo $create_id; ?>"><?php echo $create_user_image; ?>
-							<img class="card-title" 
-								src="./images/pfp/<?php echo $create_author_image?>"></a>
-								<h5 class="card-title">By <?php echo $create_author; ?></h5>
-								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+						
+						<a href="./post.php?p_id=<?php echo $create_id; ?>">
+							<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+							background-position: center center;">
+								<div class="exp-info w-50 h-20">
+									<img class="card-title pb-2" width="50px" style="border-radius:50%;" src="./images/pfp/<?php echo $create_user_image?>">
+									<h5 class="card-title">By <?php echo $create_author; ?></h5>
+									<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<?php }
 					else{continue;}
@@ -112,21 +114,22 @@
 						$create_image = $row['create_image'];
 						$create_author = $row['create_author'];
 						$create_category = $row['create_category'];
+						$create_user_image = $row['create_author_image'];
 						
 						if($create_category == 'Digital art'){
 					?>
 					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
-						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
-						background-position: center center;">
-							<div class="exp-info w-50 h-20">
-							<a href="./post.php?p_id=<?php 
-								echo $create_id; ?>"><?php echo $create_user_image; ?>
-							<img class="card-title" 
-								src="./images/pfp/<?php echo $create_author_image?>"></a>
-								<h5 class="card-title">By <?php echo $create_author; ?></h5>
-								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+						
+						<a href="./post.php?p_id=<?php echo $create_id; ?>">
+							<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+							background-position: center center;">
+								<div class="exp-info w-50 h-20">
+									<img class="card-title pb-2" width="50px" style="border-radius:50%;" src="./images/pfp/<?php echo $create_user_image?>">
+									<h5 class="card-title">By <?php echo $create_author; ?></h5>
+									<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<?php }
 					else{continue;}
@@ -152,21 +155,22 @@
 						$create_image = $row['create_image'];
 						$create_author = $row['create_author'];
 						$create_category = $row['create_category'];
+						$create_user_image = $row['create_author_image'];
 						
 						if($create_category == 'Photography'){
 					?>
 					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
-						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
-						background-position: center center;">
-							<div class="exp-info w-50 h-20">
-							<a href="./post.php?p_id=<?php 
-								echo $create_id; ?>"><?php echo $create_user_image; ?>
-							<img class="card-title" 
-								src="./images/pfp/<?php echo $create_author_image?>"></a>
-								<h5 class="card-title">By <?php echo $create_author; ?></h5>
-								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+						
+						<a href="./post.php?p_id=<?php echo $create_id; ?>">
+							<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+							background-position: center center;">
+								<div class="exp-info w-50 h-20">
+									<img class="card-title pb-2" width="50px" style="border-radius:50%;" src="./images/pfp/<?php echo $create_user_image?>">
+									<h5 class="card-title">By <?php echo $create_author; ?></h5>
+									<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<?php }
 					else{continue;}
@@ -192,21 +196,22 @@
 						$create_image = $row['create_image'];
 						$create_author = $row['create_author'];
 						$create_category = $row['create_category'];
+						$create_user_image = $row['create_author_image'];
 						
 						if($create_category == 'Videos'){
 					?>
 					<div class="col-lg-4 col-md-12 col-sm-12 my-4 exp-card">
-						<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
-						background-position: center center;">
-							<div class="exp-info w-50 h-20">
-							<a href="./post.php?p_id=<?php 
-								echo $create_id; ?>"><?php echo $create_user_image; ?>
-							<img class="card-title" 
-								src="./images/pfp/<?php echo $create_author_image?>"></a>
-								<h5 class="card-title">By <?php echo $create_author; ?></h5>
-								<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+						
+						<a href="./post.php?p_id=<?php echo $create_id; ?>">
+							<div class="exp-img m-auto rounded" style="background-image: url('./images/create/<?php echo $create_image; ?>'); background-size: cover;
+							background-position: center center;">
+								<div class="exp-info w-50 h-20">
+									<img class="card-title pb-2" width="50px" style="border-radius:50%;" src="./images/pfp/<?php echo $create_user_image?>">
+									<h5 class="card-title">By <?php echo $create_author; ?></h5>
+									<p class="card-text">★ <?php echo $create_rating ?>/5</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<?php }
 					else{continue;}
