@@ -16,6 +16,8 @@
 
         move_uploaded_file($post_image_temp, "./images/create/$post_image");
 
+        if(!empty($post_title) && !empty($post_author) && !empty($post_author_image) && !empty($post_image) && !empty($post_content) && !empty($post_category) && !empty($post_price)){
+
         $query = "INSERT INTO posts(create_title, create_description, create_author, create_category, create_rating, create_date, create_image, create_price, create_author_image)";
         $query .= " VALUES(
             '" . mysqli_real_escape_string($connect, $post_title) . "', 
@@ -28,10 +30,17 @@
             '{$post_price}', 
             '" . mysqli_real_escape_string($connect, $post_author_image) . "'
         )";
-                
         $create_post_query = mysqli_query($connect, $query);
 
         header("Location: ./explore.php");
+        }
+        else{
+            echo '<div class="alert alert-dismissible fade show m-0" style="background-color: #d586e9;" role="alert">
+            Please fill every field.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>';
+        }
+                
     } 
 
 ?>
@@ -71,13 +80,13 @@
 			<textarea class="form-control m-2" id="exampleFormControlTextarea2" 
 				placeholder="Description" rows="3" name="description"></textarea>
         </div>
-		<div class="row d-flex m-auto">
+		<div class="row d-flex m-auto align-items-center">
 			<div class="col-lg-6 col-md-6 col-sm-6 mb-3">
 				<label for="file-upload" class="custom-file-upload mx-2" 
 					style="color: #E0E0E0">Upload image</label>
         	    <input id="file-upload" type="file" name="image"/>
         	</div>
-        	<div class="col-lg-6 col-md-6 col-sm-6">
+        	<div class="col-lg-6 col-md-6 col-sm-6 mb-3">
 				<input type="submit" class="btn" name="create_post"
 					 style="background-color: #0ad6b4; color: #E0E0E0" value="Upload">
         	</div>
