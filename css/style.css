@@ -576,7 +576,7 @@ p {
 		display: none;
 	}
 	.ham-nav {
-		display: none;
+		display: none !important;
 	}
 }
 
@@ -594,7 +594,7 @@ p {
 		display: none;
 	}
 	.full-nav {
-		display: none;
+		display: none !important;
 	}
 
 }
@@ -602,7 +602,7 @@ p {
 @media screen and (max-width: 450px) {
 	/* Navbar */
 	.full-nav {
-		display: none;
+		display: none !important;
 	}
 
 	/* Home */

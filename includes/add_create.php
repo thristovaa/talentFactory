@@ -68,7 +68,7 @@
 				id="exampleFormControlInput1" name="price" placeholder="Price">
         </div>
         <div class="mb-3">
-			<textarea class="form-control m-2" id="exampleFormControlTextarea1" 
+			<textarea class="form-control m-2" id="exampleFormControlTextarea2" 
 				placeholder="Description" rows="3" name="description"></textarea>
         </div>
 		<div class="row d-flex m-auto">
