@@ -27,25 +27,24 @@
       <!-- Facebook -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
+        href="https://www.facebook.com/profile.php?id=100085411991908"
         role="button"
         data-mdb-ripple-color="dark">
         <i class="fab fa-facebook-f"></i>
       </a>
 
-      <!-- Twitter -->
+      <!-- Тик ток -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
+        href="https://www.tiktok.com/@talent_factory_?lang=en"
         role="button"
         data-mdb-ripple-color="dark"
-        ><i class="fab fa-twitter"></i
-      ></a>
+        ><i class="fa-brands fa-tiktok"></i></a>
 
       <!-- Email -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="mailto:v.stanoyska@gmail.com"
+        href="mailto:talentfactory9@gmail.com"
         role="button"
         data-mdb-ripple-color="dark">
 		<i class="fa-sharp fa-solid fa-envelope"></i>
@@ -54,11 +53,19 @@
       <!-- Instagram -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
+        href="https://www.instagram.com/talentfactory_/"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-instagram"></i
       ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.youtube.com/channel/UCCbWITYBXI4HZWRDIZ2S3Xg/featured"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa-brands fa-youtube"></i></a>
     </section>
     <!-- Section: Social media -->
   </div>
