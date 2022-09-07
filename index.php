@@ -1,4 +1,4 @@
-	<?php include "./includes/_navbar.php";?>
+<?php include "./includes/_navbar.php";?>
 	<div style="background-image: url('./images/background-blured (4).jpg');
 			background-size:cover;">
 		<div class="segment1 d-flex flex-row align-items-center">
@@ -55,7 +55,7 @@
 			<h1 style="background: #CF75E6; width: 20%; margin: auto">Let's meet</h1>
     </div>
     <div class="row m-auto w-auto px-0 py-5">      
-      <video width="800" height="600" controls>
+      <video width="600" height="500" controls>
             <source src="./images/video/01_1.mp4" type="video/mp4">
       </video>
 		</div>

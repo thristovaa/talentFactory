@@ -19,7 +19,8 @@
     	<script src="./js/bootstrap.bundle.min.js"></script>
     </head>
 	<body>
-		<nav class="navbar navbar-inverse" style="background-color: #010028">
+		<!-- Full screen nav --> 
+		<nav class="navbar navbar-inverse full-nav" style="background-color: #010028">
 		<div class="container-fluid">
   		  <div class="navbar-header">
   		    <a class="navbar-brand p-2" href="./index.php"><img src="./images/logo/logo.png" width="100px" alt=""></a>
@@ -51,3 +52,45 @@
   		  </div>
   		</div>
 	</nav>
+	
+	<!-- Hamburger nav -->
+	<nav style="background-color: #010028">
+      <div class="navbar ham-nav">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+  		  <div class="navbar-header logo">
+  		    <a class="navbar-brand p-2" href="./index.php"><img src="./images/logo/logo.png" width="100px" alt=""></a>
+  		  </div>
+          <div class="menu-items">
+            <ul class="nav navbar-nav d-flex flex-row align-items-center" style="font-size: 20px;">
+  		  		<li class="m-2"><a href="./index.php" 
+  		  			class="text-decoration-none nav-btn fs-6">Home</a></li>
+  		  		<li class="m-2"><a href="./explore.php" 
+  		  			class="text-decoration-none nav-btn fs-6">Explore</a></li>
+  		  		<?php if(isset($_SESSION['username'])){ ?>
+				<li class="m-2"><a href="./create.php" 
+  		  			class="text-decoration-none nav-btn fs-6">Upload</a></li>
+				<li class="m-2"><a href="./myuploads.php" 
+  		  			class="text-decoration-none nav-btn fs-6">My Uploads</a></li>
+				<?php } ?>
+  		  		<li class="m-2"><a href="./win.php" 
+  		  			class="text-decoration-none nav-btn fs-6">Win</a></li>
+  		  		<?php if(isset($_SESSION['username'])) { ?>
+				<form action="./includes/logout.php">
+  		  			<button type="submit" id="myModal" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Log out</button>
+  		  		</form>
+				<?php } else { ?>
+  		  		<form action="./login_form.php">
+  		  			<button type="submit" id="myModal" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+  		  		</form>
+  		  		<?php } ?>
+			</ul>          
+			</div>
+        </div>
+      </div>
+    </nav>
