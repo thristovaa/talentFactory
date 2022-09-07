@@ -67,7 +67,6 @@
                 }
 
                 $sum_avrg_ratings = number_format((array_sum($all_rating) / $sum), 2);
-                echo $sum_avrg_ratings;
 
                 $query_insert_posts = "UPDATE posts SET create_rating = '{$sum_avrg_ratings}' WHERE create_id = '{$the_post_id}';";
 
