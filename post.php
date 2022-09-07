@@ -167,7 +167,7 @@
                                 <div class="row">
                                     <div class="row d-flex align-items-end">
                                         <div class="col-6 text-align-left ml-2">
-                                            <h5 class="upload-title">Price:</h5>
+                                            <h5 class="post-title">Price:</h5>
                                         </div>
                                         <div class="col-6 text-align-left">
                                             <p class="fs-3 m-auto"><?php echo $post_price; ?> lv</p>
@@ -175,7 +175,7 @@
                                     </div>
 									<div class="row d-flex align-items-end">
                                         <div class="col-6 text-align-left ml-2">
-											<h5 class="upload-title">Post content: </h5>
+											<h5 class="post-title">Post content: </h5>
                                         </div>
                                         <div class="col-6 text-align-left">
 											<p class="fs-5 m-auto">
@@ -195,7 +195,7 @@
                             </button>
                             </h2>
                             <form method="post" action=" ">
-                                <div class="div">
+                                <div class="div rating">
                                     <input type="hidden" id="php1_hidden" name="rating[]" value="1">
                                     <img src="./images/logo/star_empty.png" onmouseover="change(this.id);" id="php1" class="php">
                                     <input type="hidden" id="php2_hidden" name="rating[]" value="2">
@@ -209,8 +209,8 @@
                                 </div>
 
                             <input type="hidden" name="phprating" id="phprating" value="0">
-                            <input type="submit" value="Submit" name="submit_rating">
-
+							<button class="btn send-btn rating-btn px-5" 
+								name="submit_rating">Send</button>
                             </form> 
                         </div>
                     </div>
