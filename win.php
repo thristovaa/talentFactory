@@ -23,7 +23,6 @@
                 <span class = "front span3"><h5>Try again</h5></span>
                 <span class = "front span4"><h5>3% discount</h5></span>
                 <span class = "front span5"><h5>5% discount</h5></span>
-                
             </div>
         </div>
 

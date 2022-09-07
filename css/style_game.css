@@ -23,7 +23,6 @@ background-position: center;
     width:500px;
     height:500px;
     margin-top:50px;
-
 }
 
 .mainbox:after{
@@ -258,4 +257,20 @@ text-align: center;
                             }
                         }
 
-
+@media screen and (max-width: 450px) {
+	.mainbox {
+		width: 300px;
+		height: 300px;
+		margin: auto;
+	}	
+	span {
+		width: 300px;
+		height: 300px;
+	}
+	.box2 h5 {
+		font-size: 1rem !important;
+	}
+	.box1 h5 {
+		font-size: 1rem !important;
+	}
+}

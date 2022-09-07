@@ -52,13 +52,14 @@
 	</div>
 	<div class="segment3 pt-5 mt-3">
 		<div class="container">
-			<h1 style="background: #CF75E6; width: 20%; margin: auto">Let's meet</h1>
-    </div>
-    <div class="row m-auto w-auto px-0 py-5">      
-      <video width="600" height="500" controls>
-            <source src="./images/video/01_1.mp4" type="video/mp4">
-      </video>
+			<h1 class="video-title" 
+				style="background: #CF75E6; width: 20%; margin: auto">Let's meet</h1>
 		</div>
+		<div class="row m-auto w-auto px-0 py-5">      
+			<video width="600" height="500" controls>
+      		      <source src="./images/video/01_1.mp4" type="video/mp4">
+      	</video>
+	</div>
 	</div>
 	<?php include "./includes/_footer.php";?>
 	</body>
