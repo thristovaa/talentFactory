@@ -25,7 +25,6 @@
                 <span class = "front span5"><h5>5% discount</h5></span>
                 
             </div>
-            
         </div>
 
         <button class = "spin" onclick="spin()">SPIN</button>
@@ -47,7 +46,7 @@
     ></audio>
 
     <script src="./js/screen.js"></script>
-<script src="./js/script.js"></script>  
+	<script src="./js/script.js"></script>  
 
 
 

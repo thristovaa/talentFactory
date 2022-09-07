@@ -1,9 +1,9 @@
 	<?php include "./includes/_navbar.php"; ?>
 	<div class="row create-bg m-0"
 		style="background-image: url('./images/create-blur (1).jpg'); background-size: cover">
-		<div class="upload-container w-50 m-auto rounded">
+		<div class="upload-container m-auto rounded">
 			<div class="content m-auto pt-3">
-	    	    <h1><span id="upload-title">Upload</span></h1>
+	    	    <h1><span class="upload-title p-1 mt-1">Upload</span></h1>
 	    	</div>
 			<?php
 			    if(isset($_GET['source'])){

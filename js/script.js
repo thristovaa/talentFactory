@@ -63,7 +63,7 @@ setTimeout(function(){
     applause.play();
     Swal.fire({
         title: '!!Congratulations!!',
-        html: ' Your price' + SelectedItem + ' | ' + '<a href="#" style = "text-decoration:none;color:blue">Claim Now</a>',
+        html: ' Your price' + SelectedItem + ' | ' + '<a href="./index.php" style = "text-decoration:none;color:blue">Claim Now</a>',
         imageUrl: './assets/win.png',
         imageWidth: 250,
         imageHeight: 250,

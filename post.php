@@ -24,32 +24,7 @@
         
         ?>
             <div class="row">
-                <div class="col-6">
-                    <div class="rounded" style="border: 0px" >
-                        <img src="./images/create/<?php echo $post_image; ?>" class="rounded w-100" alt="">
-                    </div>
-                    <div class="accordion mt-3" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                            <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Send a message
-                            </div>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <form action="">
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                    <button class="btn">Send</button>
-                                </form>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 p-4">
+				<div class="col-lg-6 col-md-12 col-sm-12 p-4 post-author-container">
                     <div class="row d-flex align-items-end">
                         <div class="col-12">
                             <h1 class="text-align-left"><?php echo $post_title; ?></h1>
@@ -58,14 +33,58 @@
                             <p class="text-align-left">Category: <mark style="background-color: #d586e9;"><?php echo $post_category; ?></mark></p>
                         </div>
                     </div>
-                    <div class="row d-flex align-items-center rounded my-2" style="border: 2px #0ad6b4 solid;">
+                    <div class="row d-flex align-items-center rounded my-2" style="border: 3px #0ad6b4 solid;">
                         <div class="col-3 p-2">
                             <img src="./images/pfp/<?php echo $post_author_image; ?>"  width="60px" style="border-radius: 50%;" alt="">
                         </div>
                         <div class="col-9 p-2 text-align-left">
                             by<h4 style="margin: 0;"><?php echo $post_author; ?></h4>
                         </div>
+					</div>
+				</div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="rounded" style="border: 0px" >
+                        <img src="./images/create/<?php echo $post_image; ?>" class="rounded w-100" alt="">
                     </div>
+                    <div class="accordion mt-3" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                            <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Buy now
+                            </div>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <form action="">
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Send message" rows="3" style="color: black;"></textarea>
+                                    </div>
+									<button class="btn send-btn px-5">Send</button>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 p-4">
+					<div class="full-screen-author-container">
+						<div class="row d-flex align-items-end">
+                    	    <div class="col-12">
+                    	        <h1 class="text-align-left"><?php echo $post_title; ?></h1>
+                    	    </div>
+                    	    <div class="col-12">
+                    	        <p class="text-align-left">Category: <mark style="background-color: #d586e9;"><?php echo $post_category; ?></mark></p>
+                    	    </div>
+                    	</div>
+                    	<div class="row d-flex align-items-center rounded my-2" style="border: 3px #0ad6b4 solid;">
+                    	    <div class="col-3 p-2">
+                    	        <img src="./images/pfp/<?php echo $post_author_image; ?>"  width="60px" style="border-radius: 50%;" alt="">
+                    	    </div>
+                    	    <div class="col-9 p-2 text-align-left">
+                    	        by<h4 style="margin: 0;"><?php echo $post_author; ?></h4>
+                    	    </div>
+                    	</div>
+					</div>
                     <div class="accordion mt-3" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -78,14 +97,22 @@
                                 <div class="row">
                                     <div class="row d-flex align-items-end">
                                         <div class="col-6 text-align-left ml-2">
-                                            <h3>Price</h3>
+                                            <h5 class="upload-title">Price:</h5>
                                         </div>
                                         <div class="col-6 text-align-left">
-                                            <p><?php echo $post_price; ?> lv</p>
+                                            <p class="fs-3 m-auto"><?php echo $post_price; ?> lv</p>
+                                        </div>
+                                    </div>
+									<div class="row d-flex align-items-end">
+                                        <div class="col-6 text-align-left ml-2">
+											<h5 class="upload-title">Post content: </h5>
+                                        </div>
+                                        <div class="col-6 text-align-left">
+											<p class="fs-5 m-auto">
+												<?php echo $post_content; ?></p>
                                         </div>
                                     </div>
                                 </div>
-                                <?php echo $post_content; ?>
                             </div>
                             </div>
                         </div>
