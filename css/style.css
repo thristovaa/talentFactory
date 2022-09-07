@@ -330,11 +330,23 @@ input[type="file"] {
 option {
 	background-color: #0AD6B4 !important;
 }
-.form-control, .form-select, option {
+
+select.form-select {
+	color: #e0e0e0;
+}
+
+.form-control{
 	background-color: transparent !important;
 	border: 2px solid !important;
 	border-color: #E0E0E0 !important;
 	color: #E0E0E0 !important;
+}
+
+.form-select, option {
+	background-color: transparent !important;
+	border: 2px solid !important;
+	border-color: #E0E0E0 !important;
+	color: black;
 }
 .form-control:focus {
 	outline: none !important;
@@ -558,6 +570,46 @@ p {
 
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
+}
+
+/*Rating*/
+.div
+{
+	border:1px solid #E6E6E6;
+	clear:both;
+	margin-top:20px;
+	height:100px;
+	width:400px;
+	padding:10px;
+	margin-left:300px;
+	border-radius:3px;
+}
+.div p
+{
+	margin:0px;
+	font-size:20px;
+	text-align:left;
+	color:#E6E6E6;
+}
+.div img
+{
+	margin-top:10px;
+	width:50px;
+	height:50px;
+	float:left;
+	
+}
+input[type="submit"]
+{
+	border:none;
+	background:none;
+	background-color:#0AD6B4;
+	width:100px;
+	height:50px;
+	color:white;
+	border-radius:3px;
+	font-size:17px;
+	margin-top:20px;
 }
 
 /* Responsive design */
