@@ -117,6 +117,35 @@
                             </div>
                         </div>
                     </div>
+                    <div class="accordion mt-3" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Rate this creation
+                            </button>
+                            </h2>
+                            <form method="post" action="./includes/insert_rating.php">
+                            <p id="total_votes">Total Votes:<?php echo $total;?></p>
+                                <div class="div">
+                                    <p>PHP (<?php echo $total_php_rating;?>)</p>
+                                    <input type="hidden" id="php1_hidden" name="rating[]" value="1">
+                                    <img src="./images/logo/star_empty.png" onmouseover="change(this.id);" id="php1" class="php">
+                                    <input type="hidden" id="php2_hidden" name="rating[]" value="2">
+                                    <img src="./images/logo/star_empty.png" onmouseover="change(this.id);" id="php2" class="php">
+                                    <input type="hidden" id="php3_hidden" name="rating[]" value="3">
+                                    <img src="./images/logo/star_empty.png" onmouseover="change(this.id);" id="php3" class="php">
+                                    <input type="hidden" id="php4_hidden" name="rating[]" value="4">
+                                    <img src="./images/logo/star_empty.png" onmouseover="change(this.id);" id="php4" class="php">
+                                    <input type="hidden" id="php5_hidden" name="rating[]" value="5">
+                                    <img src="./images/logo/star_empty.png" onmouseover="change(this.id);" id="php5" class="php">
+                                </div>
+
+                            <input type="hidden" name="phprating" id="phprating" value="0">
+                            <input type="submit" value="Submit" name="submit_rating">
+
+                            </form> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <?php } ?>
